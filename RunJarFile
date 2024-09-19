@@ -14,3 +14,18 @@
         </plugin>
     </plugins>
 </build>
+
+    --> Add below plugin in plugins section to run jar file
+
+    <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.4.2</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+              <mainClass>com.amazon.App</mainClass> <!-- Replace with your main class -->
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
